@@ -4,7 +4,7 @@
 > Architecture can be divided into two main parts
 >> Master Node(s) (Control Plane) and Worker Nodes (Node/Minions)
 
-1. Master Node:
+1. **Master Node:**
     1. kube-apiserver (API SERVER):
         - Central Component of the control plane. 
         - Exposes the Kubernetes API and serves as the entry point for all interactions with the cluster. 
@@ -21,7 +21,7 @@
         - Distributed key-value store used by kubernetes to store all cluster data. 
         - Stores cluster's state, including information about nodes pods, services and configs.
 
-2. Worker Nodes:
+2. **Worker Nodes:**
     1. kubelet:
         - An agent that runs on each worker node to ensure that the containers are running in a POD and reports the status of the node and containers back to the api server.
         - monitors the node's health and makes sure that containers are started, running and terminated as needed. 
